@@ -22,7 +22,6 @@ def Play_game():
         print("Game over,Correct number was",num)
     print("number of attemps",attempt)  
 Play_game()
-x=0
 while True:
     decision=input("If u want to play again (y/n)")
     if decision.lower() == 'y':
