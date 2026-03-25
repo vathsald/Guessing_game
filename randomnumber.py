@@ -6,7 +6,7 @@ def Play_game():
     num = random.randint(1, 100)
     guess=-1
     attempt=0
-    for i in range(2):
+    for i in range(5):
         guess=int(input("Enter your guess : "))
         attempt+=1
         if guess > num:
@@ -23,10 +23,10 @@ def Play_game():
     print("number of attemps",attempt)  
 Play_game()
 x=0
-while x==0:
+while True:
     decision=input("If u want to play again (y/n)")
-    if decision.lower == 'y' :
+    if decision.lower() == 'y':
         Play_game()
     else:
         print("Thank you for Playing")
-        x=1
+        break
